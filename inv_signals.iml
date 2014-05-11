@@ -11,6 +11,15 @@
             <entry library-name="starling" library-level="application">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-name="starling_viewmap" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="signals" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="robotlegsSignal" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="AIRSDK_Compiler" />
         </dependencies>
@@ -31,6 +40,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="robotlegs" level="application" />
     <orderEntry type="library" exported="" name="starling" level="application" />
+    <orderEntry type="library" exported="" name="starling_viewmap" level="application" />
+    <orderEntry type="library" exported="" name="signals" level="application" />
+    <orderEntry type="library" exported="" name="robotlegsSignal" level="application" />
   </component>
 </module>
 

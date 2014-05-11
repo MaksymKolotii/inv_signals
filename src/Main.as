@@ -3,11 +3,16 @@ package {
 import flash.display.Sprite;
 import flash.text.TextField;
 
+import game.GameModule;
+
+import main.MainModule;
+
 import starling.core.Starling;
 import starling.events.Event;
 
 public class Main extends Sprite {
     private var _st:Starling;
+
     public function Main() {
         var textField:TextField = new TextField();
         textField.text = "Hello, World";
@@ -26,6 +31,8 @@ public class Main extends Sprite {
 
     private function contextCreateHandler(event:Event):void {
         trace(event);
+
+        this.addChild(new MainModule());
     }
 }
 }
