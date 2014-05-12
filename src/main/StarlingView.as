@@ -9,7 +9,7 @@ public class StarlingView extends Sprite implements IStarlingView {
         super();
     }
 
-    public function setStarlingView() {
+    public function setStarlingView():void {
         trace("ABC");
     }
 }

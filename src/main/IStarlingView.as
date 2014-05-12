@@ -4,6 +4,6 @@
 package main {
 public interface IStarlingView {
 
-    function setStarlingView();
+    function setStarlingView():void;
 }
 }

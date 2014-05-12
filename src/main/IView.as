@@ -5,7 +5,7 @@ package main {
 import org.osflash.signals.ISignal;
 
 public interface IView {
-    function setView();
+    function setView():void;
     function get click():ISignal;
 }
 }

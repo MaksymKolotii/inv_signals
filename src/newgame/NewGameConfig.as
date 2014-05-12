@@ -17,6 +17,9 @@ public class NewGameConfig implements IConfig {
     [Inject]
     public var moduleConnector:IModuleConnector;
 
+    [Inject]
+    public var some:SomeClass;
+
     public function configure():void {
         this.commandMap.map(ModularConnectorEvent.PAUSE, ModularConnectorEvent).toCommand(NewGameProcessExternalEventCommand);
         this.commandMap.map(ModularConnectorEvent.SHOW, ModularConnectorEvent).toCommand(NewGameShowCommand);

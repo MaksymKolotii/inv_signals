@@ -14,12 +14,15 @@ public class View extends Sprite implements IView {
     private var _click:ISignal;
 
     public function View() {
+        super();
+
         this._click = new Signal(int, int);
     }
 
-    public function setView() {
-        this.addChild(new Bitmap(new BitmapData(100, 150, false, 0x33dd11)));
-        this.x = this.y = 100;
+    public function setView():void {
+        var bitmap:Bitmap = new Bitmap(new BitmapData(100, 100, false, 0x0));
+        bitmap.x = 200;
+        this.addChild(bitmap);
 
         this.addEventListener(MouseEvent.CLICK, onClickHandler);
     }
