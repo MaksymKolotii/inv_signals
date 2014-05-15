@@ -2,18 +2,18 @@
  * Created by px on 10.5.2014.
  */
 package main {
-import robotlegs.bender.extensions.mediatorMap.api.IMediator;
+import robotlegs.bender.bundles.mvcs.Mediator;
 
-public class StarlingViewMediator implements IMediator {
+public class StarlingViewMediator extends Mediator {
 
     [Inject]
     public var view:IStarlingView;
 
-    public function initialize():void {
+    override public function initialize():void {
         trace(this.view);
     }
 
-    public function destroy():void {
+    override public function destroy():void {
     }
 }
 }

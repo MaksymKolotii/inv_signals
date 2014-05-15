@@ -2,6 +2,8 @@
  * Created by px on 10.5.2014.
  */
 package main {
+import main.event.MainModuleEvent;
+
 import moduleconnection.ModularConnectorEvent;
 
 import robotlegs.bender.bundles.mvcs.Mediator;
@@ -30,6 +32,7 @@ public class ViewMediator extends Mediator {
         trace(x + ", " + y);
 
         dispatch(new ModularConnectorEvent(ModularConnectorEvent.PAUSE));
+        dispatch(new MainModuleEvent(MainModuleEvent.SOME));
     }
 
     override public function destroy():void {
